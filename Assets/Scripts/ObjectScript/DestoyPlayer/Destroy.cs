@@ -1,8 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
-using UnityEditor.Build;
 using UnityEngine;
-using UnityEngine.Rendering;
 
 public class Destroy : MonoBehaviour
 {

@@ -5,10 +5,11 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using UnityEngine.Rendering;
 
+    
 public class GameManager : MonoBehaviour
 {
     public GameObject gameOverUI;
-
+    public GameObject Scoring;
 
     void Start()
     {
@@ -21,6 +22,7 @@ public class GameManager : MonoBehaviour
         Cursor.visible = true;
         Cursor.lockState = CursorLockMode.None;
         gameOverUI.SetActive(true);
+        Scoring.gameObject.SetActive(false);
         
     }
     public void restart()

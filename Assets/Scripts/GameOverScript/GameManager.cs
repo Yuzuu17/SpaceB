@@ -11,6 +11,9 @@ public class GameManager : MonoBehaviour
     public GameObject gameOverUI;
     public GameObject Scoring;
 
+    public GameObject EndScreen;
+
+
     void Start()
     {
         Cursor.visible = false;
@@ -29,11 +32,16 @@ public class GameManager : MonoBehaviour
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
-
+        public void End()
+    {
+        EndScreen.SetActive(true);
+        Debug.LogError("end");
+    }
     public void quit()
     {
         Application.Quit();
         Debug.Log("Quit");
     }
+
 }
 

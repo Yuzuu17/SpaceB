@@ -12,7 +12,6 @@ public class EndObject : MonoBehaviour
         {
             gameManager.End();
             Destroy(collision.gameObject);
-            Debug.LogError("COL");
         }
     }
 }

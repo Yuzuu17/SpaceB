@@ -35,7 +35,6 @@ public class GameManager : MonoBehaviour
         public void End()
     {
         EndScreen.SetActive(true);
-        Debug.LogError("end");
     }
     public void quit()
     {
